@@ -1,147 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Duc Linh | .NET Developer</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
-    <header class="hero">
-        <div class="container">
-            <img src="avatar.jpg" alt="avatar" class="avatar">
+    <div class="background-blur blur-1"></div>
+    <div class="background-blur blur-2"></div>
 
-            <h1>LE DUC LINH</h1>
+    <!-- NAVBAR -->
 
-            <h2>.NET Fullstack Developer</h2>
+    <nav class="navbar">
+        <div class="container nav-content">
 
-            <p>
-                3+ years building enterprise web applications,
-                payment systems, automation tools, and Revit plugins.
-            </p>
-
-            <div class="socials">
-                <a href="#">GitHub</a>
-                <a href="#">LinkedIn</a>
-                <a href="mailto:yourmail@gmail.com">Email</a>
+            <div class="logo">
+                LINHLD95
             </div>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
         </div>
-    </header>
+    </nav>
 
-    <section class="section">
-        <div class="container">
-            <h3>About Me</h3>
+    <!-- HERO -->
 
-            <p>
-                I am a .NET Fullstack Developer with experience building
-                scalable business systems using .NET, SQL Server,
-                MongoDB, AngularJS, and RESTful APIs.
-            </p>
+    <section class="hero">
 
-            <p>
-                Interested in system design, microservices,
-                distributed systems, and cloud architecture.
-            </p>
+        <div class="container hero-content">
+
+            <div class="hero-left">
+
+                <p class="hero-tag">
+                    .NET FULLSTACK DEVELOPER
+                </p>
+
+                <h1>
+                    LE DUC LINH
+                </h1>
+
+                <h2>
+                    Building scalable enterprise systems with
+                    .NET, MongoDB, RabbitMQ and Angular.
+                </h2>
+
+                <p class="hero-description">
+                    5+ years of experience designing enterprise platforms,
+                    high-concurrency processing systems, payment integrations,
+                    and real-time applications.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="cv.pdf" class="btn-primary" download>
+                        Download CV
+                    </a>
+
+                    <a href="#projects" class="btn-secondary">
+                        View Projects
+                    </a>
+                </div>
+
+                <div class="hero-tech">
+                    <span>.NET</span>
+                    <span>MongoDB</span>
+                    <span>RabbitMQ</span>
+                    <span>Angular</span>
+                    <span>Redis</span>
+                    <span>Docker</span>
+                </div>
+
+            </div>
+
+            <div class="hero-right">
+
+                <div class="avatar-wrapper">
+                    <img src="avatar.jpg" alt="avatar">
+                </div>
+
+            </div>
+
         </div>
+
     </section>
+
+    <!-- ABOUT -->
+
+    <section class="section" id="about">
+
+        <div class="container">
+
+            <div class="section-title">
+                About Me
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-card">
+                    <h3>Backend Engineering</h3>
+
+                    <p>
+                        Experienced in designing scalable backend systems,
+                        asynchronous processing workflows, and high-concurrency
+                        architectures using .NET technologies.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h3>System Optimization</h3>
+
+                    <p>
+                        Reduced MongoDB response time from ~3 seconds to ~500ms
+                        through query optimization and processing redesign.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Team Leadership</h3>
+
+                    <p>
+                        Led a team of 5 developers across enterprise projects
+                        including event systems, HRM, booking, and Zalo Mini Apps.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TECH STACK -->
 
     <section class="section dark">
-        <div class="container">
-            <h3>Skills</h3>
 
-            <div class="skills">
-                <span>C#</span>
-                <span>.NET Core</span>
-                <span>ASP.NET MVC</span>
-                <span>Web API</span>
-                <span>SQL Server</span>
-                <span>MongoDB</span>
-                <span>AngularJS</span>
-                <span>RabbitMQ</span>
-                <span>Redis</span>
-                <span>Docker</span>
-                <span>Git</span>
-                <span>Revit API</span>
+        <div class="container">
+
+            <div class="section-title">
+                Tech Stack
             </div>
+
+            <div class="tech-grid">
+
+                <div class="tech-card">
+                    <h3>Backend</h3>
+
+                    <ul>
+                        <li>C#</li>
+                        <li>ASP.NET Core</li>
+                        <li>REST API</li>
+                        <li>RabbitMQ</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <h3>Database</h3>
+
+                    <ul>
+                        <li>MongoDB</li>
+                        <li>SQL Server</li>
+                        <li>Redis</li>
+                        <li>Elasticsearch</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <h3>Frontend</h3>
+
+                    <ul>
+                        <li>Angular</li>
+                        <li>AngularJS</li>
+                        <li>ReactJS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <h3>Architecture</h3>
+
+                    <ul>
+                        <li>Clean Architecture</li>
+                        <li>Microservices</li>
+                        <li>Async Processing</li>
+                        <li>CI/CD</li>
+                    </ul>
+                </div>
+
+            </div>
+
         </div>
+
     </section>
 
-    <section class="section">
+    <!-- EXPERIENCE -->
+
+    <section class="section" id="experience">
+
         <div class="container">
-            <h3>Experience</h3>
 
-            <div class="card">
-                <h4>Event Ticket Platform</h4>
-
-                <p>
-                    Built an online ticket booking system integrated
-                    with VietQR payment and QR ticket email delivery.
-                </p>
-
-                <small>.NET Core • MongoDB • VietQR</small>
+            <div class="section-title">
+                Experience
             </div>
 
-            <div class="card">
-                <h4>Sports Booking System</h4>
+            <div class="timeline">
 
-                <p>
-                    Developed a sports field booking platform with
-                    schedule management and online payment.
-                </p>
+                <div class="timeline-item">
 
-                <small>ASP.NET MVC • AngularJS • SQL Server</small>
+                    <div class="timeline-date">
+                        2023 — Present
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Sub Leader / Fullstack Developer — JDI
+                        </h3>
+
+                        <p>
+                            Led a team of 5 developers and designed enterprise systems
+                            including event management, booking platforms,
+                            HRM systems, and Zalo Mini Apps.
+                        </p>
+
+                        <div class="timeline-tags">
+                            <span>.NET</span>
+                            <span>MongoDB</span>
+                            <span>RabbitMQ</span>
+                            <span>Angular</span>
+                            <span>Redis</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-date">
+                        2021 — 2022
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Fullstack Developer — Newwave Solution
+                        </h3>
+
+                        <p>
+                            Participated in outsourcing projects for Japanese clients
+                            using WebForms, WPF, WinForms, REST APIs,
+                            and SQL Server systems.
+                        </p>
+
+                        <div class="timeline-tags">
+                            <span>.NET</span>
+                            <span>SQL Server</span>
+                            <span>WPF</span>
+                            <span>Angular</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="card">
-                <h4>Social Media Automation</h4>
-
-                <p>
-                    Built automation tools for social media account
-                    management and newsfeed data collection.
-                </p>
-
-                <small>.NET • MongoDB</small>
-            </div>
-
-            <div class="card">
-                <h4>Revit Plugin Development</h4>
-
-                <p>
-                    Developed Autodesk Revit plugins to automate BIM workflows.
-                </p>
-
-                <small>C# • Revit API</small>
-            </div>
         </div>
+
     </section>
 
-    <section class="section dark">
+    <!-- PROJECTS -->
+
+    <section class="section dark" id="projects">
+
         <div class="container">
-            <h3>Projects</h3>
 
-            <div class="card">
-                <h4>AI Interior Consultant Chatbot</h4>
-
-                <p>
-                    AI chatbot for furniture websites that recommends
-                    products and answers customer questions.
-                </p>
+            <div class="section-title">
+                Featured Projects
             </div>
 
-            <div class="card">
-                <h4>TikTok Video Downloader</h4>
+            <div class="projects-grid">
 
-                <p>
-                    Video downloader service with metadata extraction.
-                </p>
+                <div class="project-card">
+
+                    <h3>
+                        Event Management Platform
+                    </h3>
+
+                    <p>
+                        High-concurrency event platform with ticketing,
+                        QR check-in, payment integration, and async
+                        email/SMS processing.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>.NET</span>
+                        <span>MongoDB</span>
+                        <span>RabbitMQ</span>
+                        <span>AngularJS</span>
+                    </div>
+
+                </div>
+
+                <div class="project-card">
+
+                    <h3>
+                        Sports Booking Platform
+                    </h3>
+
+                    <p>
+                        Real-time sports field booking system with
+                        advanced search capabilities and booking consistency.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>.NET 8</span>
+                        <span>Angular</span>
+                        <span>MongoDB</span>
+                        <span>Redis</span>
+                    </div>
+
+                </div>
+
+                <div class="project-card">
+
+                    <h3>
+                        Zalo Mini App Ecosystem
+                    </h3>
+
+                    <p>
+                        Migrated native mobile workflows to Zalo Mini App
+                        platform and designed architecture from scratch.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Angular 18</span>
+                        <span>Zalo Mini App</span>
+                    </div>
+
+                </div>
+
             </div>
+
         </div>
+
     </section>
 
-    <footer>
-        <p>© 2026 Le Duc Linh</p>
-    </footer>
+    <!-- CONTACT -->
+
+    <section class="section" id="contact">
+
+        <div class="container">
+
+            <div class="section-title">
+                Contact
+            </div>
+
+            <div class="contact-box">
+
+                <p>
+                    Hanoi, Vietnam
+                </p>
+
+                <p>
+                    0967325594
+                </p>
+
+                <p>
+                    leduclinh564th@gmail.com
+                </p>
+
+                <div class="contact-links">
+                    <a href="#">GitHub</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
